@@ -1,1 +1,83 @@
-<p>Hello World</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00539f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+.project {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project h2 {
+  color: #00539f;
+}
+
+.project p {
+  color: #333333;
+}
+
+footer {
+  background-color: #00539f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Kevin Mosley's Portfolio</h1>
+  <img src="./Images/headshot_v1.jpeg" alt="[My picture]">
+</header>
+
+<main>
+  <section class="project">
+    <h2>Tetris</h2>
+    <img src="./Images/Tetris.png" width = "400" height = 400 alt= "Tetris">
+    <p>Tetris replica created using C++ with the SFML graphics library.</p>
+    <p><a href="https://github.com/kev1179/Tetris" style="color: #00539f;" target="_blank">GitHub Repository</a></p>
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/R8VND3fvTDQ"></iframe>
+  </section>
+
+  <section class="project">
+    <h2>Project 2: Project Name</h2>
+    <img src="project2.jpg" alt="Project 2">
+    <p>Description of Project 2.</p>
+    <p><a href="https://github.com/yourusername/project2" style="color: #00539f;">GitHub Repository</a></p>
+    <p><a href="https://www.youtube.com/watch?v=yourvideoid" style="color: #00539f;">YouTube Video</a></p>
+  </section>
+
+  <!-- Add more sections for additional projects -->
+</main>
+
+</body>
+</html>
