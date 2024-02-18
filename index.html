@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Portfolio</title>
-<link rel="stylesheet" href="styles.css">
+<title>Kevin Mosley's Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body {
   font-family: Arial, sans-serif;
@@ -50,11 +51,52 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+.column {
+  float: left;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.fa {
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: black;
+  color: white;
+}
+
+.right_header {
+    float: right;
+}
 </style>
 </head>
 <body>
 
 <header>
+    <div class = "right_header">
+        <a href="https://www.linkedin.com/in/kevin-mosley-348372251" target="_blank" class="fa fa-linkedin fa-xs"></a>
+        <a href="https://github.com/kev1179" target="_blank" class="fa fa-github fa-xs"></a>
+    </div>
   <h1>Kevin Mosley's Portfolio</h1>
   <img src="./Images/headshot_v1.jpeg" alt="[My picture]">
 </header>
@@ -62,21 +104,66 @@ footer {
 <main>
   <section class="project">
     <h2>Tetris</h2>
-    <img src="./Images/Tetris.png" width = "400" height = 400 alt= "Tetris">
-    <p>Tetris replica created using C++ with the SFML graphics library.</p>
-    <p><a href="https://github.com/kev1179/Tetris" style="color: #00539f;" target="_blank">GitHub Repository</a></p>
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/R8VND3fvTDQ"></iframe>
+    <ul>
+        <li>Tetris replica created in C++ using the SFML graphics library</li>
+        <li>20 different speeds to choose from</li>
+        <li>Contains piece statistic tracking, piece preview, and high score tracking</li>
+        <li>Works on Linux and Windows</li>
+        <li>Next objective is to switch to a CMake build system for easy cross platform deployment</li>
+    </ul>
+    <p><a href="https://github.com/kev1179/Tetris" style="color: #00539f;" target="_blank">GitHub</a></p>
+    <iframe width="600" height="400" src="https://www.youtube.com/embed/R8VND3fvTDQ"></iframe>
+
+    <div class = "row">
+        <div class = "column">
+            <img src="./Images/Tetris.png" width = "400" height = 267 alt= "Tetris">
+        </div>
+        <div class = "column">
+            <img src="./Images/tetris_menu.png" width = "400" height = 267 alt= "Tetris">
+        </div>
+        <div class = "column">
+            <img src="./Images/tetris_gameplay.png" width = "400" height = 267 alt= "Tetris">
+        </div>
+    </div>
   </section>
 
   <section class="project">
-    <h2>Project 2: Project Name</h2>
-    <img src="project2.jpg" alt="Project 2">
-    <p>Description of Project 2.</p>
-    <p><a href="https://github.com/yourusername/project2" style="color: #00539f;">GitHub Repository</a></p>
-    <p><a href="https://www.youtube.com/watch?v=yourvideoid" style="color: #00539f;">YouTube Video</a></p>
+    <h2>Bitcoin Portfolio Calculator</h2>
+    <ul>
+        <li>Bitcoin earnings calculator</li>
+        <li>Developed in C++</li>
+        <li>Git was used for a collaborative workflow</li>
+        <li>Users can enter the time and date they bought Bitcoin in the past and find out what it is worth today</li>
+        <li>Users can also find out the top 10 lowest and highest bitcoin prices on a given interval of their choosing</li>
+    </ul>
+    <p><a href="https://github.com/kev1179/Bitcoin-Portfolio-Calculator" style="color: #00539f;" target="_blank">GitHub</a></p>
+    <iframe width="420" height="345" src="https://www.youtube.com/embed/jtTnUmvedKw"></iframe>
   </section>
 
-  <!-- Add more sections for additional projects -->
+  <section class="project">
+    <h2>Street Ninja</h2> 
+    <ul>
+        <li>Created using Unity and C#</li>
+        <li>Fun and addictive platforming gameplay with sword mechanics</li>
+        <li>Integrated advertisements for revenue generation</li>
+        <li>Published on Android app store</li>
+    </ul>
+    <p><a href="https://play.google.com/store/apps/details?id=com.Kevdevelops.Street_Ninja&hl=en&gl=US" style="color: #00539f;" target="_blank">Play Store Link</a></p>
+
+    <div class="row">
+        <div class="column">
+          <img src="./Images/street_ninja_1.png" alt="gameplay" width = "400" height = "267">
+        </div>
+        <div class="column">
+          <img src="./Images/street_ninja_2.png" alt="gameplay"width = "400" height = "267">
+        </div>
+        <div class="column">
+          <img src="./Images/street_ninja_3.png" alt="gameplay"width = "400" height = "267">
+        </div>
+      </div>
+
+  </section>
+
 </main>
 
 </body>
