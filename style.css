@@ -14,6 +14,44 @@ body {
     radial-gradient(ellipse at 10% 10%, #35244f 0%, transparent 55%);
 }
 
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 180px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.center
+{
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.center
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .playstore:hover
 {
   opacity: 0.7;
@@ -56,39 +94,19 @@ body {
       float: right;
   }
 
-  #intro
-  {
-    /*width:100vw; 
-    height:100vh;*/
-  }
-
   #intro-text
   {
-    /*width:1300px;
-    /*
-    position: relative;
-    top: 150px;
-    /*left: 20px;*/
-    width: 33vw;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #headshot
-  {
-    
+    width: 50vw;
+    float: left;
+    margin-top: 20px;
   }
 
   #table-of-contents
   {
-    /*float: right;
-    bottom: 10px;
-    right:10px;
-    */
     font-size: 24px;
-    float:right;
-    
-    /*position: absolute;*/
+    float: right;
+    margin-right: 20px;
+    margin-top: 50px;
   }
 
   .contentText:hover
@@ -97,10 +115,13 @@ body {
     cursor: pointer;
   }
 
-  #aboutMe
+  .section
   {
-    /*position: relative;
-    top: 200px;
-    /*background-color: rgb(96, 96, 127);
-    height: 400px; */
+    float: left;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 90vw;
   }
